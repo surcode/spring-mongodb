@@ -46,32 +46,6 @@
 
 	<build>
 		<plugins>
-		<plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jar-plugin</artifactId>
-        <version>2.3.1</version>
-        
-        
-        <executions>
-		<execution>
-			<id>default-jar</id>
-			<phase>none</phase>
-		</execution>
-		<execution>
-			<id>jar</id>
-			<configuration>
-				<outputDirectory>target/deploy</outputDirectory>
-				<archiveClasses>true</archiveClasses>
-			</configuration>
-			<phase>prepare-package</phase>
-			<goals>
-			 	<goal>run</goal>
-		    </goals>
-		</execution>
-	</executions>
-        
-        
-      </plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>

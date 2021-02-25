@@ -6,11 +6,13 @@ phases:
   build:
     commands:
       - echo "Entered build phase"
-      - mvn clean package
+  #   - mvn package
   post_build:
     commands:
       - echo "Entered the post-build phase"
-      - mv target/deploy ./
+      - mvn package
+ #     - mv target/deploy ./
 artifacts:
   files:
-    - deploy/**/*
+    - target/spring-mongodb-0.0.1-SNAPSHOT.jar
+    - appsec.yml
