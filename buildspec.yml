@@ -1,18 +1,13 @@
 version: 0.2
 phases:
-  pre_build:
-    commands:
-      - echo "Entered the pre-build phase"
+  install:
+    runtime-versions:
+      java: openjdk8
+
   build:
     commands:
-      - echo "Entered build phase"
-  #   - mvn package
-  post_build:
-    commands:
-      - echo "Entered the post-build phase"
-      - mvn package
- #     - mv target/deploy ./
+      - mvn install  
 artifacts:
   files:
     - target/spring-mongodb-0.0.1-SNAPSHOT.jar
-    - appsec.yml
+   
