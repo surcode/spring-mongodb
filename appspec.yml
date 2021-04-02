@@ -1,5 +1,5 @@
-#version: 0.0
-#os: linux
-#files:
-#  - source: ./spring-mongodb-0.0.1-SNAPSHOT.jar
-#    destination: /tmp
+version: 0.0
+os: linux
+files:
+  - source: ./spring-mongodb-0.0.1-SNAPSHOT.jar
+    destination: /tmp
